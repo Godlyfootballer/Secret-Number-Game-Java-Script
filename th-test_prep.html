@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+		function randomNumber(minimum, maximum){
+    		return Math.round( Math.random() * (maximum - minimum) + minimum);
+		}
+		let input = prompt('Enter a number between 1 and 20', )
+		random =randomNumber(1, 20)
+		while (input != random){
+			if (input > 20){
+				alert('Guess over 20')
+			}
+
+			else if(input < 0){
+				alert('Guess under 0')
+			}
+			else if (input < random){
+				alert('You guessed to low.')
+			} else if (input > random){
+				alert('You Guessed to High.')
+			}
+			else{
+				break
+			}
+			input = prompt('Enter a number between 1 and 20', )
+}		alert('Congratulations! You have won the Secret Number Game!!!!')
+
+	</script>
+
+</body>
+</html>
